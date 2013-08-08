@@ -18,7 +18,7 @@ class NotificationMailer < ActionMailer::Base
     @profile = user.profile
     addInlineImage('logo','/app/assets/images/moove-it.png')
 
-    mail(:to => user.email, :subject => "New Feedback for your project in Moove-iT")
+    mail(:to => user.email, :subject => "New Feedback for your project in Business")
   end
 
   def comment_notification_email(comment,user)
@@ -27,7 +27,7 @@ class NotificationMailer < ActionMailer::Base
     @user = user
     @profile = user.profile
     addInlineImage('logo','/app/assets/images/moove-it.png')
-    mail(:to => user.email, :subject => "New Comment for your project in Moove-iT")
+    mail(:to => user.email, :subject => "New Comment for your project in Business")
   end
 
   def reminder_email(project,user)
@@ -42,7 +42,7 @@ class NotificationMailer < ActionMailer::Base
     addInlineImage('Pleased','/app/assets/images/moods/small/4.png')
     addInlineImage('Happy','/app/assets/images/moods/small/5.png')
 
-    mail(:to => user.email, :subject => "Friendly reminder from Moove-iT")
+    mail(:to => user.email, :subject => "Friendly reminder from Business")
   end
 
 end

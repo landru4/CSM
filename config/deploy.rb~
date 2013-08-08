@@ -1,5 +1,5 @@
 set :application, "CSM"
-set :repository,  "https://github.com/landru4/CSM"
+set :repository,  "https://github.com/pis2012/Customer-Satisfaction-Manager"
 set :use_sudo,    false
 
 

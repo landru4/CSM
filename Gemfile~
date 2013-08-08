@@ -8,7 +8,7 @@ gem 'rails', '3.2.8'
 #group :development do
 #  gem 'mysql2'
 #end
-gem 'pg'
+gem 'sqlite3'
 
 
 gem 'devise'
